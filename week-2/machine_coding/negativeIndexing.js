@@ -22,7 +22,7 @@ const newPerson = new Proxy(person, {
 
 const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 
-// function negativeIndex([...arr]) to prevent shallow copy of original array
+// function negativeIndex([...arr]) to prevent shallow copy of original array.
 function negativeIndex(arr) {
   const target = new Proxy(arr, {
     // getter: to get the value
